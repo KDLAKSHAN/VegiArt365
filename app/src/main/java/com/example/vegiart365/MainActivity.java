@@ -4,12 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.content.Intent;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.TextView;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
        Button Addcard =(Button) findViewById(R.id.Addcard);
        Button account=(Button) findViewById(R.id.account);
        ImageView category=(ImageView) findViewById(R.id.category);
+        ImageView offer=(ImageView) findViewById(R.id.offer);
+        Button ALLView=(Button) findViewById(R.id.Viewall);
 
         Addcard.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,6 +42,22 @@ public class MainActivity extends AppCompatActivity {
              }
          });
 
+         offer.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View view) { openoffer();
+
+             }
+         });
+
+        ALLView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) { openALLViwe();
+
+            }
+        });
+
+
+
     }
     public void openLogin(){
         Intent intent=new Intent(this,Login.class);
@@ -51,6 +67,18 @@ public class MainActivity extends AppCompatActivity {
     public void opencategory(){
 
         Intent intent=new Intent(this,category.class);
+        startActivities(new Intent[]{intent});
+    }
+
+    public void openoffer(){
+
+        Intent intent=new Intent(this,offer.class);
+        startActivities(new Intent[]{intent});
+    }
+
+    public void openALLViwe(){
+
+        Intent intent=new Intent(this,ALLViwe.class);
         startActivities(new Intent[]{intent});
     }
 

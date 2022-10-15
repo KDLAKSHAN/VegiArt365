@@ -4,18 +4,16 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.content.Intent;
-import android.os.Bundle;
+
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
 public class Login extends AppCompatActivity {
-
     Button signIn;
     EditText email,password;
     TextView signUp;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,7 +23,7 @@ public class Login extends AppCompatActivity {
         email = findViewById(R.id.email_login);
         password = findViewById(R.id.password_login);
         signUp = findViewById(R.id.Sign_up);
-
+// button click go
         signUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
