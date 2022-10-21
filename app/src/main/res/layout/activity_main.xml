@@ -197,7 +197,7 @@
                           android:id="@+id/category"
                           android:layout_width="match_parent"
                           android:layout_height="wrap_content"
-                          android:src="@drawable/catagory_2">
+                          android:src="@drawable/category">
 
                       </ImageView>
                   </LinearLayout>
@@ -540,7 +540,7 @@
 
                                       android:cropToPadding="false"
                                       android:adjustViewBounds="true"
-                                      android:src="@drawable/meat"
+                                      android:src="@drawable/meat_1"
                                       android:layout_width="match_parent"
                                       android:layout_height="wrap_content">
 

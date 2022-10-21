@@ -10,9 +10,9 @@
 
         android:id="@+id/cart"
         android:icon="@drawable/ic_cart1"/>
-    <item android:title="Person"
-        android:id="@+id/person"
-        android:icon="@drawable/ic_customer_satisfaction"/>
+    <item android:title="Favorite"
+        android:id="@+id/favorite"
+        android:icon="@drawable/ic_fav"/>
     <item android:title="User"
         android:id="@+id/user"
         android:icon="@drawable/ic_user"/>
